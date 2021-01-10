@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'SweetHipster';
+  src: url('../assets/font/SweetHipster-PzlE.ttf');
+}
+
+.body {
+ font-family: 'Work Sans',sans-serif;
+}
+
+
+.color1 {
+  color : #D28F40 !important;
+}
+
+.color1-dark {
+  color: #b6772e;
+}
+
+.color2 {
+  color: #efd9d1;
+}
+.color3 {
+  color: #f4eeed;
+}
+.bg1 {
+  background-color: #D28F40;
+}
+.bg3 {
+  background-color: #f4eeed;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '';
+  font-size: 55px;
+  color: #D28F40;
+}
+
+.carousel-control-prev-icon:after {
+  content: '';
+  font-size: 55px;
+  color: #D28F40;
+}
+
+.bg1-dark {
+  background-color: #b6772e;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../assets/img/7.jpg");
+
+  /* Set a specific height */
+  height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -210px;
+  z-index: -10;
+  padding-top: 200px;
+}
+
+.navbar {
+  background-color:rgba(255, 255, 255, 0);
+}
+
+.font1 {
+  font-family: 'Sacramento', cursive;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}
+
+
+
+/* .jumbotron .counter-mobile .card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  font-size: 10px;
+} */
+
+.hello{
+  margin-top: -100px;
+}
+
+.hello-body img{
+  width: 30%;
+}
+
+.event {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.event .subtitle {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.event .card {
+  border: 3px solid white;
+}
+
+.galery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.galery .subtitle {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.galery img {
+  border-radius: 5px;
+}
+
+.location {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.location .subtitle {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.wishes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wishes .subtitle {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .subtitle {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.ft {
+  margin-top: 100px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .parallax {
+    /* The image used */
+    background-image: url("../assets/img/7.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -110px;
+    z-index: -10;
+    padding-top: 130px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .hello-body img {
+    width: 100%;
+  }
+  .hello-body {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  .hello-body .name {
+    min-height: 50px;
+    margin-top: 20px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #D28F40;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #D28F40;
+  }
+  .jumbotron .card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: smaller;
+    color: white;
+  }
+
+  .counter {
+    margin-top: 220px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hello-body img {
+    width: 50%;
+  }
+  .mobile {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+  .hello-body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .hello-body .name {
+    margin-top: 20px;
+  }
+
+  .jumbotron .card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    font-size: smaller;
+    color: white;
+  }
+
+  .counter {
+    margin-top: 220px;
+  }
+  
+  .navbar .navbar-brand {
+    padding-top: 100px;
+  }
+}
+
+
