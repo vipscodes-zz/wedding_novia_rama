@@ -1,15 +1,44 @@
 @font-face {
-  font-family: 'SweetHipster';
-  src: url('../assets/font/SweetHipster-PzlE.ttf');
+  font-family: "SweetHipster";
+  src: url("../assets/font/SweetHipster-PzlE.ttf");
 }
 
 .body {
- font-family: 'Work Sans',sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
+.welcome {
+  background-color: #d28f40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+.content {
+  display: none;
+}
+.open {
+  background-color: #fff;
+  transition: 3s;
+  opacity: 0;
+}
+
+.btn-open {
+  background-color: #f4eeed;
+  color: #d28f40;
+  border: none;
+  border-radius: 100px;
+}
 
 .color1 {
-  color : #D28F40 !important;
+  color: #d28f40 !important;
 }
 
 .color1-dark {
@@ -23,28 +52,20 @@
   color: #f4eeed;
 }
 .bg1 {
-  background-color: #D28F40;
+  background-color: #d28f40;
 }
 .bg3 {
   background-color: #f4eeed;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-image: none;
+
+.border-card {
+  box-shadow: 0px 0px 1px #e6b175;
+  transition: 1s;
 }
 
-.carousel-control-next-icon:after {
-  content: '';
-  font-size: 55px;
-  color: #D28F40;
-}
-
-.carousel-control-prev-icon:after {
-  content: '';
-  font-size: 55px;
-  color: #D28F40;
+.border-card:hover {
+  box-shadow: 7px 7px 1px #e6b175;
+  transition: 1s;
 }
 
 .bg1-dark {
@@ -69,18 +90,16 @@
 }
 
 .navbar {
-  background-color:rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .font1 {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
 }
 
 .navbar-brand {
   font-size: 50px;
 }
-
-
 
 /* .jumbotron .counter-mobile .card {
   background: rgba(255, 255, 255, 0.25);
@@ -91,11 +110,11 @@
   font-size: 10px;
 } */
 
-.hello{
+.hello {
   margin-top: -100px;
 }
 
-.hello-body img{
+.hello-body img {
   width: 30%;
 }
 
@@ -162,7 +181,7 @@
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .footer a:hover {
@@ -214,15 +233,15 @@
   }
 
   .carousel-control-next-icon:after {
-    content: '>';
+    content: ">";
     font-size: 55px;
-    color: #D28F40;
+    color: #d28f40;
   }
 
   .carousel-control-prev-icon:after {
-    content: '<';
+    content: "<";
     font-size: 55px;
-    color: #D28F40;
+    color: #d28f40;
   }
   .jumbotron .card {
     background: rgba(255, 255, 255, 0.25);
@@ -271,10 +290,8 @@
   .counter {
     margin-top: 220px;
   }
-  
+
   .navbar .navbar-brand {
     padding-top: 100px;
   }
 }
-
-
