@@ -51,13 +51,45 @@ terang 5F6187
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../assets/img/welcome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-welcome {
+  color: #b69d5b;
+  font-size: 10vh;
+  margin-top: 100px;
 }
 
 .btn-open {
-  background-color: #f4eeed;
-  color: #b69d5b;
+  background-color: #b69d5b;
+  color: #f4eeed;
   border: none;
   border-radius: 100px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
+  transition: 1s;
+}
+.btn-open:hover {
+  background-color: #8d7432;
+  color: #f4eeed;
+  transition: 1s;
+}
+.muncul {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
+}
+
+.creator:hover {
+  color: #b69d5b;
 }
 
 .color1 {

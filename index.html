@@ -39,12 +39,11 @@
     <div class="welcome" id="welcome">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="navbar-brand font1 text-white" href="#">
-            Wedding Invitation
+          <h1 class=" font1 text-welcome" id="open">
           </h1>
         </div>
         <div class="col-12 text-center">
-          <button type="button" class="btn-open btn mt-5" id="btn-open">
+          <button type="button" class="btn-open btn mt-3" id="btn-open">
             Click Here To Open
           </button>
         </div>
@@ -244,11 +243,11 @@
                     <h5 class="card-title mt-3">AKAD</h5>
                     <div class="row">
                       <div class="col">
-                        <i class="far fa-clock"></i>
-                        <p>08:00 - 11:00</p>
+                        <i class="far fa-clock" style="font-size: x-large;"></i>
+                        <p>08:00 - 10:00</p>
                       </div>
                       <div class="col">
-                        <i class="far fa-calendar"></i>
+                        <i class="far fa-calendar" style="font-size: x-large;"></i>
                         <p>April 4th, 2020</p>
                       </div>
                     </div>
@@ -257,18 +256,18 @@
                     <h5 class="card-title mt-3">RECEPTION</h5>
                     <div class="row">
                       <div class="col">
-                        <i class="far fa-clock"></i>
-                        <p>11:00 - 16.00</p>
+                        <i class="far fa-clock" style="font-size: x-large;"></i>
+                        <p>10:00 - 14.00</p>
                       </div>
                       <div class="col">
-                        <i class="far fa-calendar"></i>
+                        <i class="far fa-calendar" style="font-size: x-large;"></i>
                         <p>April 4th, 2020</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <h5>Caffe & Resto Los135</h5>
+                <h5>Los135 cafe and resto</h5>
                 <p class="card-text mb-4">
                   Jl. Raya Cicalengka - Majalaya, Elos, Kec. Paseh, Bandung,
                   Jawa Barat 40383
@@ -428,11 +427,11 @@
       <div class="container" id="footer">
         <div class="hello-title text-center">
           <h6 class="color3 ft font-weight-light">
-            Made with <i class="fas fa-heart"></i> by Grting
+            Made with <i class="fas fa-heart"></i> by Avip Syaifulloh
           </h6>
           <a href="#"
             ><span class="color3"
-              ><i class="fab fa-instagram"></i> Grting</span
+              ><i class="fab fa-instagram"></i> <a href="https://instagram.com/avipsyaifulloh" class="color3 creator">Avip Syaifulloh</a></span
             ></a
           >
         </div>
@@ -450,6 +449,11 @@
 
       $(window).on("load", function () {
         $(".loader-container").fadeOut(1000);
+        setTimeout(() => { 
+          typeWriter(); 
+          $("#btn-open").addClass("muncul");
+        }, 1000);
+        
       });
       var audio = new Audio("assets/audio/audio.mp3");
       function playAudio() {
@@ -461,6 +465,19 @@
         $("#welcome").fadeOut(1000);
         playAudio();
       });
+
+      var i = 0;
+      var txt = 'Wedding Invitation';
+      var speed = 100;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("open").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+        
+      }
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
