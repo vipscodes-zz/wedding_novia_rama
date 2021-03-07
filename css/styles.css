@@ -60,7 +60,7 @@ terang 5F6187
 .text-welcome {
   color: #b69d5b;
   font-size: 10vh;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .btn-open {
@@ -115,12 +115,6 @@ terang 5F6187
 
 .border-card {
   box-shadow: 0px 0px 1px #8d7432;
-  transition: 1s;
-}
-
-.border-card:hover {
-  box-shadow: 7px 7px 1px #8d7432;
-  transition: 1s;
 }
 
 .bg1-dark {
@@ -183,7 +177,18 @@ terang 5F6187
 }
 
 .event .card {
-  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.event .card-body {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #977c36, #7f682d);
+  border: 2px solid #f4eeed;
+  box-shadow: 30px 30px 60px #78632b, -30px -30px 60px #a2853a;
+}
+
+.event .card-title {
+  font-size: 30px;
 }
 
 .galery {
@@ -313,9 +318,21 @@ terang 5F6187
   .counter {
     margin-top: 80px;
   }
+
+  .time {
+    padding: 0 30px;
+  }
+
+  .iconset {
+    font-size: xx-large;
+  }
 }
 
 @media (max-width: 992px) {
+  .iconset {
+    font-size: x-large;
+  }
+
   .hello-body img {
     width: 50%;
   }
