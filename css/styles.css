@@ -265,6 +265,18 @@ terang 5F6187
   font-weight: bold;
 }
 
+.btn-gmaps {
+  border-radius: 100px;
+  border: 2px solid #f4eeed;
+  color: #f4eeed;
+}
+
+.btn-gmaps:hover {
+  background-color: #f4eeed;
+  color: #8d7432;
+  border: 2px solid transparent;
+}
+
 @media (min-width: 992px) {
   .parallax {
     /* The image used */
