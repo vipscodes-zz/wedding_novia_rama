@@ -320,6 +320,14 @@ terang 5F6187
     display: flex;
   }
 
+  .mobile-text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: block;
+  }
+
   .carousel-control-next-icon:after {
     content: ">";
     font-size: 55px;
@@ -377,6 +385,13 @@ terang 5F6187
   .desktop {
     display: none;
   }
+  .mobile-text {
+    display: block;
+    font-size: 50px;
+  }
+  .desktop-text {
+    display: none;
+  }
   .hello-body {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -397,11 +412,11 @@ terang 5F6187
   }
 
   .punch-text {
-    margin-top: 100px;
+    margin-top: 80px;
     text-shadow: 2px 2px 20px rgba(10, 11, 36);
   }
   .counter {
-    margin-top: 150px;
+    margin-top: 60px;
   }
 
   .navbar .navbar-brand {
