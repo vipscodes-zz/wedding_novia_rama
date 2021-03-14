@@ -418,7 +418,9 @@ terang 5F6187
   .counter {
     margin-top: 60px;
   }
-
+  .text-salam {
+    margin-top: -80px;
+  }
   .navbar .navbar-brand {
     padding-top: 100px;
   }
